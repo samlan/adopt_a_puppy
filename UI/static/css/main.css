@@ -3,7 +3,9 @@ body{
     background-color: brown;
 }
 header,footer{
-    display: inline-block;
+    /*display: inline-block;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
     color: white;
     
     }
@@ -43,6 +45,16 @@ button{
         padding-right:20px;
         color:#ffffff;
     }
+
+#sign_up_button{
+    background-color:#e8491d;
+    font-size: 10px;
+    }
+
+#log_in_button{
+    background-color: aqua;
+    font-size: 10px;
+}
        
     .highlight, .current a{
         color:#e8491d;
@@ -84,8 +96,33 @@ button{
     .card label{
         color:brown;
     }
+
+    .imgcontainer {
+    
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    
 #main{
     display: grid;
     grid-template-columns: auto auto auto;
     background-color:#FAD2CA;
+    
+}
+
+#main_form{
+     background-color: brown;
+     color:black;
+}
+#log_in_form{
+    vertical-align:middle;
+    margin-left: 30%;
+    max-width: 500px;
+    background-color: burlywood;
+    border-radius: 10%;
 }
